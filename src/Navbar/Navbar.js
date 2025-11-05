@@ -6,22 +6,17 @@ function Navbar() {
             <ul className="nav justify-content-end">
                 <li className="nav-item">
                     <a className="nav-link active" aria-current="page" href="#">
-                        Active
+                        Home
                     </a>
                 </li>
                 <li className="nav-item">
                     <a className="nav-link" href="#">
-                        Link
+                        Skills
                     </a>
                 </li>
                 <li className="nav-item">
                     <a className="nav-link" href="#">
-                        Link
-                    </a>
-                </li>
-                <li className="nav-item">
-                    <a className="nav-link disabled" aria-disabled="true">
-                        Disabled
+                        Experience
                     </a>
                 </li>
             </ul>
@@ -29,3 +24,4 @@ function Navbar() {
         </div>
     )
 }
+export default Navbar;

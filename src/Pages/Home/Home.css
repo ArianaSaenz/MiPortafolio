@@ -1,0 +1,115 @@
+
+/* === GENERAL STYLE === */
+body {
+  background-color: #ffffff;
+  color: #1a1a1a;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* === HEADER GRADIENT === */
+header {
+  position: relative;
+  background: linear-gradient(180deg, #b7f0ad 0%, #1f6f3b 100%);
+  border-bottom-left-radius: 3rem;
+  border-bottom-right-radius: 3rem;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* === LOGO TEXT === */
+header h1 {
+  font-family: 'Archivo Black', sans-serif;
+  letter-spacing: 3px;
+  font-size: 2.5rem;
+}
+
+/* === PORTFOLIO HEADER IMAGE === */
+header img {
+  transition: transform 0.4s ease-in-out;
+}
+
+header img:hover {
+  transform: scale(1.05);
+}
+
+/* === GREETING SECTION === */
+section h3 {
+  color: #1a3a24;
+  font-weight: 700;
+}
+
+section p {
+  color: #444;
+}
+
+section img {
+  transition: transform 0.3s ease-in-out;
+}
+
+section img:hover {
+  transform: scale(1.05);
+}
+
+/* === EDUCATION (Learning Journey) === */
+.learning-path {
+  position: relative;
+  margin-top: 2rem;
+}
+
+.learning-path::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 4px;
+  height: 100%;
+  background: linear-gradient(to bottom, #4caf50, #2e7d32);
+  border-radius: 2px;
+}
+
+.learning-card {
+  background-color: #e7f7e4;
+  border-radius: 1.5rem;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  text-align: center;
+  width: 230px;
+  position: relative;
+  z-index: 2;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+}
+
+.learning-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+}
+
+.learning-card h3 {
+  font-weight: 700;
+  color: #1b4332;
+}
+
+.learning-card p {
+  font-size: 0.9rem;
+  color: #333;
+}
+
+/* === FOOTER === */
+footer {
+  background-color: #0b2e13;
+  color: #d4f3d0;
+  padding: 2rem 0;
+  text-align: center;
+  border-top: 3px solid #1f6f3b;
+}
+
+footer a {
+  color: #9ef89e;
+  margin: 0 10px;
+  transition: color 0.3s;
+}
+
+footer a:hover {
+  color: #e3ffe3;
+}
+

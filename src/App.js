@@ -3,18 +3,17 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.min.js";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import NavBar from './Navbar/Navbar';
-import Home from './Pages/Home';
-import Education from './Pages/Education';
-import Projects from './Pages/Projects';
-import Skills from './Pages/Skills';
+import Home from './Pages/Home/Home';
+import Education from './Pages/Education/Education';
+import Projects from './Pages/Projects/Projects';
+import Skills from './Pages/Skills/Skills';
 
 function App() {
-  const showNavbar = true; 
 
   return (
     <Router>
       <div>
-        {showNavbar && <NavBar />}
+        <NavBar />
 
         <Routes>
           <Route path="/" element={<Home />} />
