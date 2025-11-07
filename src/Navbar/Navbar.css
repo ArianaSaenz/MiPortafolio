@@ -1,0 +1,80 @@
+/* 🔹 NAVBAR GENERAL */
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 20px 80px;
+  background-color: #0f3d2e; /* Verde oscuro */
+  list-style: none;
+  margin: 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* 🔹 ELEMENTOS */
+.nav-item {
+  margin-left: 30px;
+  position: relative;
+}
+
+/* 🔹 LINKS */
+.nav-link {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+  transition: color 0.3s ease, transform 0.3s ease;
+  position: relative;
+}
+
+/* Hover: cambio de color + pequeña animación */
+.nav-link:hover {
+  color: #2ecc71; /* Verde brillante */
+  transform: translateY(-2px);
+}
+
+/* 🔸 Línea animada debajo del link */
+.nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #2ecc71;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* 🔹 Link activo (Home por ejemplo) */
+.nav-link.active {
+  color: #2ecc71;
+}
+
+.nav-link.active::after {
+  width: 100%;
+}
+
+/* 🔹 Responsivo (pantallas pequeñas) */
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px;
+    gap: 10px;
+  }
+
+  .nav-item {
+    margin-left: 0;
+  }
+
+  .nav-link {
+    font-size: 1.1rem;
+  }
+}
