@@ -10,11 +10,7 @@ function Navbar() {
                         Home
                     </Link>
                 </li>
-                <li className="nav-item">
-                    <Link className="nav-link" to="/Skills">
-                        Skills
-                    </Link>
-                </li>
+                
                 <li className="nav-item">
                     <Link className="nav-link" to="/Projects">
                         Experience
