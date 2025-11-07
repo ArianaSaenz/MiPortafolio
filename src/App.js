@@ -4,7 +4,6 @@ import "bootstrap/dist/js/bootstrap.min.js";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import NavBar from './Navbar/Navbar';
 import Home from './Pages/Home/Home';
-import Education from './Pages/Education/Education';
 import Projects from './Pages/Projects/Projects';
 import Skills from './Pages/Skills/Skills';
 
@@ -17,7 +16,6 @@ function App() {
 
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/Education" element={<Education />} />
           <Route path="/Projects" element={<Projects />} />
           <Route path="/Skills" element={<Skills />} />
         </Routes>

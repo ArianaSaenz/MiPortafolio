@@ -1,38 +1,69 @@
+import { FaInstagram, FaLinkedin, FaGithub } from "react-icons/fa";
+import "./Footer.css";
 
 export default function Footer() {
   return (
-    <footer className="bg-green-900 text-white mt-10 py-10">
-      <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-8 px-6 text-center md:text-left">
-        
-        <div>
-          <h3 className="text-lg font-semibold mb-3">Social media</h3>
-          <ul className="space-y-2">
-            <li><a href="#" className="hover:text-green-300">Instagram</a></li>
-            <li><a href="#" className="hover:text-green-300">LinkedIn</a></li>
-            <li><a href="#" className="hover:text-green-300">GitHub</a></li>
-          </ul>
+    <footer className="footer">
+      <div className="footer-container">
+        {/* Columna 1 - Social Media */}
+        <div className="footer-section">
+          <h3>Social Media</h3>
+          <div className="social-icons">
+            <a
+  href="https://www.instagram.com/aari_hope?igsh=Y2F2cHk3ZTl3a210"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="social-insta flex items-center gap-2 hover:underline"
+>
+  <FaInstagram />
+  <span>Instagram</span>
+</a>
+
+<a
+  href="https://www.linkedin.com/in/ariana-saenz-84b131368?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="social-linkedin flex items-center gap-2 hover:underline"
+>
+  <FaLinkedin />
+  <span>LinkedIn</span>
+</a>
+
+<a
+  href="https://github.com/ArianaSaenz"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="social-gitHub flex items-center gap-2 hover:underline"
+>
+  <FaGithub />
+  <span>GitHub</span>
+</a>
+
+            
+          </div>
         </div>
 
-        <div>
-          <h3 className="text-lg font-semibold mb-3">About</h3>
-          <p className="text-sm text-green-100 leading-relaxed">
-            I’m Ariana Sáenz, a creative communicator passionate about leadership, 
-            innovation, and connecting ideas through meaningful projects.
+        {/* Columna 2 - About */}
+        <div className="footer-section about">
+          <h3>About Me</h3>
+          <p>
+            A passionate web designer and developer focused on creativity and clean design
           </p>
         </div>
 
-        <div>
-          <h3 className="text-lg font-semibold mb-3">Links</h3>
-          <ul className="space-y-2">
-            <li><a href="/" className="hover:text-green-300">Home</a></li>
-            <li><a href="/education" className="hover:text-green-300">Education</a></li>
-            <li><a href="/skills" className="hover:text-green-300">Skills</a></li>
-          </ul>
+        {/* Columna 3 - CV */}
+        <div className="footer-section">
+          <h3>CV</h3>
+          <a href="https://www.canva.com/design/DAGuIwGI_tk/5KJePmsbU16aJJtj1IA9fA/view?utm_content=DAGuIwGI_tk&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hddd9580089" className="cv-link">
+            Check my CV
+          </a>
         </div>
       </div>
-      <p className="text-center text-green-200 text-sm mt-8">
-        © 2025 Ariana Sáenz | All rights reserved
-      </p>
+
+      {/* Línea inferior */}
+      <div className="footer-bottom">
+        <p>© 2025 Ariana Sáenz | All rights reserved 🌿</p>
+      </div>
     </footer>
   );
 }

@@ -1,23 +1,24 @@
-import { Link } from 'react-router-dom'
+import { Link } from "react-router-dom";
+import "./Navbar.css" 
 
 function Navbar() {
     return (
         <div>
             <ul className="nav justify-content-end">
                 <li className="nav-item">
-                    <a className="nav-link active" aria-current="page" href="#">
+                    <Link className="nav-link active" aria-current="page" to="/">
                         Home
-                    </a>
+                    </Link>
                 </li>
                 <li className="nav-item">
-                    <a className="nav-link" href="#">
+                    <Link className="nav-link" to="/Skils">
                         Skills
-                    </a>
+                    </Link>
                 </li>
                 <li className="nav-item">
-                    <a className="nav-link" href="#">
+                    <Link className="nav-link" to="/Experience">
                         Experience
-                    </a>
+                    </Link>
                 </li>
             </ul>
 
