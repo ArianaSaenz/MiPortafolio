@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/MiPortafolio/static/css/main.e00a479e.css",
+    "main.js": "/MiPortafolio/static/js/main.587bd3f5.js",
+    "static/js/453.383f3e8d.chunk.js": "/MiPortafolio/static/js/453.383f3e8d.chunk.js",
+    "static/media/imagen4.png": "/MiPortafolio/static/media/imagen4.06c2c1e4bc22ac9d4647.png",
+    "static/media/imagen2.png": "/MiPortafolio/static/media/imagen2.f51d30aa80e9cd748780.png",
+    "static/media/imagen1.png": "/MiPortafolio/static/media/imagen1.035f366662c11553259e.png",
+    "static/media/js.png": "/MiPortafolio/static/media/js.fcfbe5ad80ecad86a6fd.png",
+    "static/media/superate.png": "/MiPortafolio/static/media/superate.58cdf240c5bb437a932f.png",
+    "static/media/excel.png": "/MiPortafolio/static/media/excel.a156d54c41c8ebdd48aa.png",
+    "static/media/easy.png": "/MiPortafolio/static/media/easy.8f02f4ebd1b1aa2b1c8c.png",
+    "static/media/yumfull.png": "/MiPortafolio/static/media/yumfull.0a27c86696af39f5638e.png",
+    "index.html": "/MiPortafolio/index.html",
+    "main.e00a479e.css.map": "/MiPortafolio/static/css/main.e00a479e.css.map",
+    "main.587bd3f5.js.map": "/MiPortafolio/static/js/main.587bd3f5.js.map",
+    "453.383f3e8d.chunk.js.map": "/MiPortafolio/static/js/453.383f3e8d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e00a479e.css",
+    "static/js/main.587bd3f5.js"
+  ]
+}
