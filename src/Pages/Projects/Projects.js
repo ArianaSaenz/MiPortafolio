@@ -11,19 +11,19 @@ function Projects() {
   return (
     <div className="bg-white text-gray-900 font-sans">
 
-      {/* 🔹 BANNER SUPERIOR */}
+     
       <header className="banner-container">
         <img src={FondoVerde} alt="Fondo verde" className="banner-bg" />
 
-        {/* Título */}
+        
         <h1 className="portfolio-title">PORTFOLIO</h1>
 
-        {/* Foto flotante */}
+       
         <div className="profile-wrapper">
           <img src={FotoPerfil} alt="Ariana Sáenz" className="profile-img" />
         </div>
 
-        {/* Rectángulo verde oscuro */}
+        
         <div className="info-box">
           <h2>Ariana Sáenz</h2>
           <p>Integrated Marketing Communications Student</p>
@@ -31,7 +31,7 @@ function Projects() {
       </header>
 
       <div className="portfolio-container">
-        {/* YUMFULL */}
+        
         <div className="portfolio-item">
           <div className="text-content">
             <h2>YUMFULL</h2>
@@ -41,13 +41,21 @@ function Projects() {
             <p>
               With a group I created a space where people can discover nutritious products to buy and explore easy, balanced recipes they can prepare at home. My goal with Yumfull was to encourage mindful eating and make wellness more approachable by blending convenience, education, and flavor.
             </p>
+             <a 
+      href="https://github.com/ArianaSaenz/FrontEnd-Yumfull.git" 
+      target="_blank" 
+      rel="noopener noreferrer" 
+      className="project-button"
+    >
+      Take a look 
+    </a>
           </div>
           <div className="image-frame">
             <img src={yumfull} alt="YumFull logo" />
           </div>
         </div>
 
-        {/* SEVEN */}
+       
         <div className="portfolio-item reverse">
           <div className="image-frame">
             <img src={sevenLogo} alt="Seven logo" />
@@ -60,10 +68,18 @@ function Projects() {
             <p>
               Through this project, I aimed to build a creative space that celebrates local talent and encourages artistic appreciation, while also educating visitors about different styles and mediums.
             </p>
+             <a 
+      href="https://github.com/tomasBONILL/SevenProyect" 
+      target="_blank" 
+      rel="noopener noreferrer" 
+      className="project-button"
+    >
+      Take a look
+    </a>
           </div>
         </div>
 
-        {/* EASY TRAVEL */}
+        
         <div className="portfolio-item">
           <div className="text-content">
             <h2>EASY TRAVEL</h2>
@@ -73,6 +89,14 @@ function Projects() {
             <p>
               With Easy Travel, I aimed to make international travel more accessible by centralizing useful tools and resources in one place.
             </p>
+             <a 
+      href="https://www.figma.com/design/jX8RwBUA4UMy88fan9FX9y/Untitled?node-id=0-1&t=8I9ZXljPAu4qJUDn-1" 
+      target="_blank" 
+      rel="noopener noreferrer" 
+      className="project-button"
+    >
+      Take a look
+    </a>
           </div>
           <div className="image-frame">
             <img src={easytravel} alt="Easy Travel logo" />
