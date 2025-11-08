@@ -1,0 +1,240 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+
+.banner-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+
+.banner-bg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+
+.portfolio-title {
+  position: absolute;
+  top: 110px;
+  left: 90px;
+  font-size: 80px;
+  font-weight: 900;
+  color: transparent;
+  -webkit-text-stroke: 3px #000000;
+  letter-spacing: 4px;
+  z-index: 5;
+  font-family: "Poppins", sans-serif;
+}
+
+
+.profile-wrapper {
+  position: absolute;
+  top: 350px;
+  left: 100px;
+  z-index: 10;
+  background: white;
+  padding: 8px;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.profile-img {
+  width: 200px;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+}
+
+
+.info-box {
+  position: absolute;
+  top: 500px;
+  left: 0;
+  width: 100%;
+  background-color: #1b5e20;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 30px 120px;
+  z-index: 8;
+}
+
+.info-box h2 {
+  font-size: 38px;
+  top: 280px;
+  font-weight: 800;
+  font-family: "Poppins", sans-serif;
+  margin-left: 250px;
+}
+
+.info-box p {
+  font-size: 25px;
+  margin-top: 0.2px;
+  font-family: "Poppins", sans-serif;
+  margin-left: 250px ;
+}
+
+
+
+
+.portfolio-container {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 60px 25px;
+  font-family: "Poppins", sans-serif;
+  background-color: #f5f8f6;
+}
+
+
+.portfolio-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  background: #ffffff;
+  border-radius: 24px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  padding: 40px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portfolio-item:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+}
+
+
+.portfolio-item.reverse {
+  flex-direction: row-reverse;
+}
+
+
+.text-content {
+  flex: 1;
+}
+
+.text-content h2 {
+  font-family: "Playfair Display", serif;
+  font-weight: 900;
+  letter-spacing: 1px;
+  margin-bottom: 12px;
+  font-size: 2.5rem;
+  color: #0b3b26;
+}
+
+.text-content p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #333;
+  max-width: 95%;
+}
+
+
+.image-frame {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.image-frame img {
+  width: 100%;
+  max-width: 360px;
+  border-radius: 18px;
+  object-fit: cover;
+  box-shadow: 0 8px 20px rgba(27, 107, 87, 0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-frame img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 28px rgba(27, 107, 87, 0.35);
+}
+
+
+.image-frame::before {
+  content: "";
+  position: absolute;
+  width: 90%;
+  height: 90%;
+  border: 4px solid #1b6b57;
+  border-radius: 22px;
+  top: 15px;
+  left: 15px;
+  z-index: 0;
+  opacity: 0.5;
+  transition: all 0.3s ease;
+}
+
+.portfolio-item.reverse .image-frame::before {
+  left: auto;
+  right: 15px;
+}
+
+.portfolio-item:hover .image-frame::before {
+  opacity: 0.8;
+  transform: scale(1.02);
+}
+
+@media (max-width: 900px) {
+  .portfolio-item {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+  }
+
+  .portfolio-item.reverse {
+    flex-direction: column;
+  }
+
+  .text-content h2 {
+    font-size: 2rem;
+  }
+
+  .text-content p {
+    font-size: 0.95rem;
+  }
+
+  .image-frame img {
+    max-width: 300px;
+  }
+}
+
+.project-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 28px;
+  background-color: #0e4922;
+  color: #fff;
+  font-weight: 600;
+  font-size: 0.95rem;
+  border: none;
+  border-radius: 10px;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(27, 107, 87, 0.25);
+  transition: all 0.3s ease;
+}
+
+.project-button:hover {
+  background-color: #145644;
+  box-shadow: 0 6px 18px rgba(27, 107, 87, 0.35);
+  transform: translateY(-2px);
+}

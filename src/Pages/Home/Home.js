@@ -12,26 +12,25 @@ function Home() {
   return (
     <div className="bg-white text-gray-900 font-sans">
       
-      {/* 🔹 BANNER SUPERIOR */}
+     
       <header className="banner-container">
         <img src={FondoVerde} alt="Fondo verde" className="banner-bg" />
 
-        {/* Título */}
+       
         <h1 className="portfolio-title">PORTFOLIO</h1>
 
-        {/* Foto flotante */}
         <div className="profile-wrapper">
           <img src={FotoPerfil} alt="Ariana Sáenz" className="profile-img" />
         </div>
 
-        {/* Rectángulo verde oscuro */}
+       
         <div className="info-box">
           <h2>Ariana Sáenz</h2>
           <p>Integrated Marketing Communications Student</p>
         </div>
       </header>
 
-{/* 🔹 SECCIÓN DE PRESENTACIÓN PERSONAL */}
+
 <section className="about-section">
   <div className="about-text">
     <h2>
@@ -54,7 +53,7 @@ function Home() {
   </div>
 </section>
 
-{/* 🔹 SECCIÓN DE EDUCACIÓN */}
+
 <section className="learning-section">
   <h2 className="learning-title">My Learning Journey!</h2>
   <p className="learning-description">
@@ -65,18 +64,18 @@ function Home() {
   <div className="timeline">
     <div className="timeline-line"></div>
 
-    {/* 🔸 Tarjeta 1 */}
+    
     <div className="timeline-item">
       <div className="card">
         <h3>¡Supérate! Program Graduated</h3>
         <img
-          src={SuperateLogo} // importa esta imagen en la parte superior del archivo
+          src={SuperateLogo} 
           alt="¡Supérate!"
         />
       </div>
     </div>
 
-    {/* 🔸 Tarjeta 2 */}
+    
     <div className="timeline-item">
       <div className="card">
         <h3>JavaScript Certification</h3>
@@ -87,7 +86,7 @@ function Home() {
       </div>
     </div>
 
-    {/* 🔸 Tarjeta 3 */}
+  
     <div className="timeline-item">
       <div className="card">
         <h3>Excel Certified</h3>
