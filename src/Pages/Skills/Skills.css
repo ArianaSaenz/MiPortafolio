@@ -61,7 +61,7 @@ html, body {
 
 .info-box {
   position: absolute;
-  top: 500px;
+  top: 550px;
   left: 0;
   width: 100%;
   background-color: #1b5e20;
@@ -106,6 +106,8 @@ html, body {
 }
 
 
+
+
 .skills-container {
   font-family: "Poppins", sans-serif;
   background: #f4f7f5;
@@ -135,7 +137,7 @@ html, body {
 
 .skills-list {
   list-style: none;
-  background: #fff;
+  background: #d8f1df;
   padding: 20px;
   border-radius: 16px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.06);
@@ -187,14 +189,3 @@ html, body {
 }
 
 
-.fill.js { width: 80%; }
-.fill.excel { width: 75%; }
-.fill.powerbi { width: 70%; }
-.fill.office { width: 85%; }
-.fill.html { width: 90%; }
-.fill.css { width: 85%; }
-.fill.react { width: 75%; }
-.fill.canva { width: 90%; }
-.fill.figma { width: 70%; }
-.fill.genially { width: 80%; }
-.fill.ppt { width: 85%; }
